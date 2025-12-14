@@ -10,20 +10,17 @@ const About = () => {
 
           <div className="flex flex-col gap-8 md:flex-row items-start">
             <div className="md:w-1/3">
-              <img src="/paintings/2024/self-portrait-2024.jpg" alt="Self Portrait 2024" className="" />
+              <img src="/about.jpg" alt="Ellie Tsatsou-Palmer portrait" className="" />
             </div>
             <div className="prose prose-lg md:w-2/3">
-              <p className="text-2xl text-black mb-6 font-bold">
-                Everything as a continuation of something else
-              </p>
+              <p className="text-2xl text-black mb-6 font-bold">Hello, I’m Ellie.</p>
               <p className="text-black mb-6">
-                My work is mostly engaging with iterations of itself and ideas that come through the process of making it. Every
-                subsequent painting to be an act of rebirth, reimagining, reincarnation.
+                My work is rooted at the intersection of creative insight, academic research and pedagogical design,
+                allowing me to approach making and learning as transformational opportunities. With a foundation in
+                digital media production, creative direction/photography, and interdisciplinary lecturing & mentoring, I
+                now focus on building and hosting learning environments that carry intellectual gravitas, emotional
+                resonance and creative innovation.
               </p>
-              <p className="text-black mb-6">
-                The principle tenet being that everything is a continuation and nothing exists in isolation.
-              </p>
-              {/* <p className="text-black mb-6">"To err is human," etc...</p> */}
             </div>
           </div>
 
