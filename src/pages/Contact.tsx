@@ -111,12 +111,12 @@ const Contact = () => {
                 <div>
                   <p className="text-black font-bold">Instagram</p>
                   <a 
-                    href="https://www.instagram.com/__lbp_/" 
+                    href="https://www.instagram.com/ellietsatsoustudio/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-black hover:text-primary transition-colors underline"
                   >
-                    @__lbp_
+                    @ellietsatsoustudio
                   </a>
                 </div>
                 <div>

@@ -906,7 +906,7 @@ export const artworks: Artwork[] = [
     image: '/6.jpg',
     price: 1800,
     sold: false,
-    collection: 'Alphabet',
+    collection: 'Moon series',
     editionOf: 5,
     editionsold: 2,
     remaining: 3,
