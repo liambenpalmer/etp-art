@@ -79,7 +79,15 @@ export const books: Book[] = [
     price: 0,
     buyLink: '',
     images: [
-      '/placeholder.svg'
+      '/FTPTW_BookPhotos_HR-3.jpg',
+      '/FTPTW_BookPhotos_HR-7.jpg',
+      '/FTPTW_BookPhotos_HR-9.jpg',
+      '/FTPTW_BookPhotos_HR-10.jpg',
+      '/FTPTW_BookPhotos_HR-12.jpg',
+      '/FTPTW_BookPhotos_HR-12b.jpg',
+      '/FTPTW_BookPhotos_HR-13.jpg',
+      '/FTPTW_BookPhotos_HR-13b.jpg',
+      '/FTPTW_BookPhotos_HR-14.jpg'
     ],
     available: true,
     featured: true
