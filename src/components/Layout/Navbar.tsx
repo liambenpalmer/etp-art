@@ -35,6 +35,12 @@ const Navbar: React.FC = () => {
             >
               Artworks
             </NavLink>
+            <NavLink to="/books" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+              Books
+            </NavLink>
+            <NavLink to="/exhibitions" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+              Exhibitions
+            </NavLink>
             <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               About
             </NavLink>
@@ -77,6 +83,12 @@ const Navbar: React.FC = () => {
                 <SubNav />
               </div>
             )}
+            <NavLink to="/books" className={({ isActive }) => `py-2 ${isActive ? 'font-medium' : ''}`}>
+              Books
+            </NavLink>
+            <NavLink to="/exhibitions" className={({ isActive }) => `py-2 ${isActive ? 'font-medium' : ''}`}>
+              Exhibitions
+            </NavLink>
             <NavLink to="/about" className={({ isActive }) => `py-2 ${isActive ? 'font-medium' : ''}`}>
               About
             </NavLink>
