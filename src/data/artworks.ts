@@ -19,200 +19,201 @@ export interface Artwork {
   editionsold?: number;
   remaining?: number;
   Artistsproof?: number;
+  viewOnWall: 'framed' | 'unframed' | 'off';
 }
 
 export const collections: Collection[] = ['Alphabet', 'Moon series', 'Cynotypes', 'Posters', 'A Family You Choose'];
 
 export const artworks: Artwork[] = [
-//   {
-//     id: '1001',
-//     title: 'Moon #11',
-//     year: 2016,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 80,
-//     height: 120,
-//     framed: false,
-//     image: '/2016/moon11.jpg',
-//     price: 2500,
-//     sold: false,
-//     collection: 'Moon series',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1001',
+  //     title: 'Moon #11',
+  //     year: 2016,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 80,
+  //     height: 120,
+  //     framed: false,
+  //     image: '/2016/moon11.jpg',
+  //     price: 2500,
+  //     sold: false,
+  //     collection: 'Moon series',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1002',
-//     title: 'the tallest tree I’ve ever seen, the place where I was born',
-//     year: 2013,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 80,
-//     height: 120,
-//     framed: false,
-//     image: '/2013/tallesttree.jpg',
-//     price: 2500,
-//     sold: false,
-//     collection: 'Alphabet',
-//     editionOf: 5,
-//     editionsold: 4,
-//     remaining: 1,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1002',
+  //     title: 'the tallest tree I’ve ever seen, the place where I was born',
+  //     year: 2013,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 80,
+  //     height: 120,
+  //     framed: false,
+  //     image: '/2013/tallesttree.jpg',
+  //     price: 2500,
+  //     sold: false,
+  //     collection: 'Alphabet',
+  //     editionOf: 5,
+  //     editionsold: 4,
+  //     remaining: 1,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1003',
-//     title: 'father, big blue sea',
-//     year: 2009,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 120,
-//     height: 80,
-//     framed: false,
-//     image: '/2009/bigbluesea.jpg',
-//     price: 2500,
-//     sold: false,
-//     collection: 'Alphabet',
-//     editionOf: 5,
-//     editionsold: 3,
-//     remaining: 2,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1003',
+  //     title: 'father, big blue sea',
+  //     year: 2009,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 120,
+  //     height: 80,
+  //     framed: false,
+  //     image: '/2009/bigbluesea.jpg',
+  //     price: 2500,
+  //     sold: false,
+  //     collection: 'Alphabet',
+  //     editionOf: 5,
+  //     editionsold: 3,
+  //     remaining: 2,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1004',
-//     title: 'a spiritual place in the midst of the mountains',
-//     year: 2009,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 120,
-//     height: 80,
-//     framed: false,
-//     image: '/2009/spiritualplacemountains.jpg',
-//     price: 2500,
-//     sold: false,
-//     collection: 'Alphabet',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
-//   {
-//     id: '1005',
-//     title: 'Lioness Blue',
-//     year: 2014,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 120,
-//     height: 80,
-//     framed: false,
-//     image: '/2014/lionessblue.jpg',
-//     price: 2500,
-//     sold: false,
-//     collection: '',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1004',
+  //     title: 'a spiritual place in the midst of the mountains',
+  //     year: 2009,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 120,
+  //     height: 80,
+  //     framed: false,
+  //     image: '/2009/spiritualplacemountains.jpg',
+  //     price: 2500,
+  //     sold: false,
+  //     collection: 'Alphabet',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
+  //   {
+  //     id: '1005',
+  //     title: 'Lioness Blue',
+  //     year: 2014,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 120,
+  //     height: 80,
+  //     framed: false,
+  //     image: '/2014/lionessblue.jpg',
+  //     price: 2500,
+  //     sold: false,
+  //     collection: '',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1006',
-//     title: 'above all else',
-//     year: 2012,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 80,
-//     height: 120,
-//     framed: false,
-//     image: '/2012/aboveallelse.jpg',
-//     price: 2500,
-//     sold: false,
-//     collection: 'Alphabet',
-//     editionOf: 5,
-//     editionsold: 3,
-//     remaining: 2,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1006',
+  //     title: 'above all else',
+  //     year: 2012,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 80,
+  //     height: 120,
+  //     framed: false,
+  //     image: '/2012/aboveallelse.jpg',
+  //     price: 2500,
+  //     sold: false,
+  //     collection: 'Alphabet',
+  //     editionOf: 5,
+  //     editionsold: 3,
+  //     remaining: 2,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1007',
-//     title: 'Growing',
-//     year: 2014,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 50,
-//     height: 75,
-//     framed: false,
-//     image: '/2014/growing.jpg',
-//     price: 1800,
-//     sold: false,
-//     collection: '',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1007',
+  //     title: 'Growing',
+  //     year: 2014,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 50,
+  //     height: 75,
+  //     framed: false,
+  //     image: '/2014/growing.jpg',
+  //     price: 1800,
+  //     sold: false,
+  //     collection: '',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1008',
-//     title: 'an improvisation',
-//     year: 2012,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 50,
-//     height: 75,
-//     framed: false,
-//     image: '/2012/improvisation.jpg',
-//     price: 1800,
-//     sold: false,
-//     collection: 'Alphabet',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1008',
+  //     title: 'an improvisation',
+  //     year: 2012,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 50,
+  //     height: 75,
+  //     framed: false,
+  //     image: '/2012/improvisation.jpg',
+  //     price: 1800,
+  //     sold: false,
+  //     collection: 'Alphabet',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1009',
-//     title: 'High Mountains Are A Feeling',
-//     year: 2016,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 50,
-//     height: 75,
-//     framed: false,
-//     image: '/2016/highmountains.jpg',
-//     price: 1800,
-//     sold: false,
-//     collection: '',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   },
+  //   {
+  //     id: '1009',
+  //     title: 'High Mountains Are A Feeling',
+  //     year: 2016,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 50,
+  //     height: 75,
+  //     framed: false,
+  //     image: '/2016/highmountains.jpg',
+  //     price: 1800,
+  //     sold: false,
+  //     collection: '',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   },
 
-//   {
-//     id: '1010',
-//     title: 'High Mountains Are A Feeling',
-//     year: 2016,
-//     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
-//     width: 50,
-//     height: 75,
-//     framed: false,
-//     image: '/2016/highmountains.jpg',
-//     price: 1800,
-//     sold: false,
-//     collection: '',
-//     editionOf: 5,
-//     editionsold: 2,
-//     remaining: 3,
-//     Artistsproof: 2,
-//     notForSale: false
-//   }
-{
+  //   {
+  //     id: '1010',
+  //     title: 'High Mountains Are A Feeling',
+  //     year: 2016,
+  //     medium: 'Giclée Print Hahnemühle PhotoRag 308gsm',
+  //     width: 50,
+  //     height: 75,
+  //     framed: false,
+  //     image: '/2016/highmountains.jpg',
+  //     price: 1800,
+  //     sold: false,
+  //     collection: '',
+  //     editionOf: 5,
+  //     editionsold: 2,
+  //     remaining: 3,
+  //     Artistsproof: 2,
+  //     notForSale: false
+  //   }
+  {
     id: '2010',
     title: 'P1',
     year: 2016,
@@ -229,7 +230,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2011',
@@ -248,7 +250,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2012',
@@ -267,7 +270,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2013',
@@ -285,7 +289,9 @@ export const artworks: Artwork[] = [
     editionsold: 2,
     remaining: 3,
     Artistsproof: 2,
-    notForSale: false
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2014',
@@ -304,7 +310,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2015',
@@ -323,7 +330,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2016',
@@ -342,7 +350,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2017',
@@ -361,7 +370,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2018',
@@ -380,7 +390,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2019',
@@ -399,7 +410,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2020',
@@ -418,7 +430,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2021',
@@ -437,7 +450,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2022',
@@ -456,7 +470,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2023',
@@ -475,7 +490,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2024',
@@ -494,7 +510,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2025',
@@ -513,7 +530,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2026',
@@ -532,7 +550,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2027',
@@ -551,7 +570,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2028',
@@ -570,7 +590,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2029',
@@ -589,7 +610,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2030',
@@ -608,7 +630,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2031',
@@ -627,7 +650,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2032',
@@ -646,7 +670,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2033',
@@ -665,7 +690,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2034',
@@ -684,7 +710,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2035',
@@ -703,7 +730,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2036',
@@ -722,7 +750,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2037',
@@ -741,7 +770,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2038',
@@ -760,7 +790,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2039',
@@ -779,7 +810,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2040',
@@ -798,7 +830,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2041',
@@ -817,7 +850,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2042',
@@ -836,7 +870,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2043',
@@ -855,7 +890,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2044',
@@ -874,7 +910,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2045',
@@ -893,7 +930,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2046',
@@ -912,7 +950,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2047',
@@ -931,7 +970,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2048',
@@ -950,7 +990,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2049',
@@ -969,7 +1010,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2050',
@@ -988,7 +1030,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2051',
@@ -1007,7 +1050,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2052',
@@ -1026,7 +1070,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2053',
@@ -1045,7 +1090,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2054',
@@ -1064,7 +1110,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2055',
@@ -1083,7 +1130,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2056',
@@ -1102,7 +1150,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2057',
@@ -1121,7 +1170,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2058',
@@ -1140,7 +1190,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2059',
@@ -1159,7 +1210,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2060',
@@ -1178,7 +1230,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2061',
@@ -1197,7 +1250,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2062',
@@ -1216,7 +1270,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2063',
@@ -1235,7 +1290,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2064',
@@ -1254,7 +1310,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2065',
@@ -1273,7 +1330,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2066',
@@ -1292,7 +1350,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2067',
@@ -1311,7 +1370,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2068',
@@ -1330,7 +1390,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2069',
@@ -1349,7 +1410,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2070',
@@ -1368,7 +1430,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2071',
@@ -1387,7 +1450,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2072',
@@ -1406,7 +1470,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2073',
@@ -1425,7 +1490,8 @@ export const artworks: Artwork[] = [
     remaining: 3,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2074',
@@ -1444,7 +1510,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2075',
@@ -1463,7 +1530,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2076',
@@ -1482,7 +1550,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2077',
@@ -1501,7 +1570,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2078',
@@ -1520,7 +1590,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2079',
@@ -1539,7 +1610,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2080',
@@ -1558,7 +1630,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2081',
@@ -1577,7 +1650,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2082',
@@ -1596,7 +1670,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2083',
@@ -1615,7 +1690,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2084',
@@ -1634,7 +1710,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2085',
@@ -1653,7 +1730,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2086',
@@ -1672,7 +1750,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2087',
@@ -1691,7 +1770,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2088',
@@ -1710,7 +1790,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2089',
@@ -1729,7 +1810,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2090',
@@ -1748,7 +1830,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2091',
@@ -1767,7 +1850,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2092',
@@ -1786,7 +1870,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2093',
@@ -1805,7 +1890,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2094',
@@ -1824,7 +1910,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2095',
@@ -1843,7 +1930,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2096',
@@ -1862,7 +1950,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2097',
@@ -1881,7 +1970,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2098',
@@ -1900,7 +1990,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2099',
@@ -1919,7 +2010,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2100',
@@ -1938,7 +2030,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2101',
@@ -1957,7 +2050,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2102',
@@ -1976,7 +2070,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2103',
@@ -1995,7 +2090,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2104',
@@ -2014,7 +2110,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2105',
@@ -2033,7 +2130,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2106',
@@ -2052,7 +2150,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2107',
@@ -2071,7 +2170,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2108',
@@ -2090,7 +2190,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2109',
@@ -2109,7 +2210,8 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
   },
   {
     id: '2110',
@@ -2128,7 +2230,409 @@ export const artworks: Artwork[] = [
     remaining: 5,
     Artistsproof: 2,
     notForSale: false,
-    featured: true
+    featured: true,
+    viewOnWall: 'framed'
+  },
+  {
+    id: '2111',
+    title: 'Cyanotype 06',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_06.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2112',
+    title: 'Cyanotype 07',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_07.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2113',
+    title: 'Cyanotype 08',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 100,
+    height: 100,
+    depth: 4,
+    framed: true,
+    image: '/MA_(1500)_08.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2114',
+    title: 'Cyanotype 09',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_09.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2115',
+    title: 'Cyanotype 10',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_10.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2116',
+    title: 'Cyanotype 11',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_11.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2117',
+    title: 'Cyanotype 12',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_12.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2118',
+    title: 'Cyanotype 13',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_13.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2119',
+    title: 'Cyanotype 14',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_14.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2120',
+    title: 'Cyanotype 15',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_15.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2121',
+    title: 'Cyanotype 16',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_16.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2122',
+    title: 'Cyanotype 17',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_17.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2123',
+    title: 'Cyanotype 18',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_18.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2124',
+    title: 'Cyanotype 19',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_19.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2125',
+    title: 'Cyanotype 20',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_20.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2126',
+    title: 'Cyanotype 21',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_21.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2127',
+    title: 'Cyanotype 22',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_22.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2128',
+    title: 'Cyanotype 23',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_23.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2129',
+    title: 'Cyanotype 24',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_24.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
+  },
+  {
+    id: '2130',
+    title: 'Cyanotype 25',
+    year: 2024,
+    medium: 'Cyanotype print',
+    width: 50,
+    height: 75,
+    framed: false,
+    image: '/MA_(1500)_25.jpg',
+    price: 1800,
+    sold: false,
+    collection: 'Cynotypes',
+    editionOf: 5,
+    editionsold: 0,
+    remaining: 5,
+    Artistsproof: 2,
+    notForSale: false,
+    featured: true,
+    viewOnWall: 'unframed'
   }
 ];
 

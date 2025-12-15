@@ -152,13 +152,13 @@ const GalleryWallView: React.FC<GalleryWallViewProps> = ({ artwork, isOpen, onCl
             className="frame"
             style={{
               display: "inline-block",
-              background: "linear-gradient(135deg, #8B7355 0%, #6B5345 50%, #4A3728 100%)",
+              background: artwork.viewOnWall === 'framed' ? "linear-gradient(135deg, #8B7355 0%, #6B5345 50%, #4A3728 100%)" : "transparent",
               boxShadow: `
                 inset 0 0 0 1px rgba(255,255,255,0.1),
-                0 10px 30px rgba(0,0,0,0.2),
-                0 5px 10px rgba(0,0,0,0.15)
+                0 10px 10px rgba(0,0,0,0.1),
+                0 5px 10px rgba(0,0,0,0.075)
               `,
-              padding: `${frameWidthPx}px`,
+              padding: artwork.viewOnWall === 'framed' ?  `${frameWidthPx}px` : "0px",
             }}
           >
             {/* Frame inner edge with black mat/border */}
@@ -166,8 +166,8 @@ const GalleryWallView: React.FC<GalleryWallViewProps> = ({ artwork, isOpen, onCl
               className="frame__inner"
               style={{
                 boxShadow: "inset 0 0 5px rgba(0,0,0,0.3)",
-                backgroundColor: "#000",
-                padding: `${matWidthPx}px`,
+                backgroundColor: artwork.viewOnWall === 'framed' ? "#000" : "transparent",
+                padding: artwork.viewOnWall === 'framed' ? `${matWidthPx}px` : "0px",
               }}
             >
               {/* The artwork image */}
