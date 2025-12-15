@@ -30,17 +30,17 @@ const BookDetail: React.FC<BookDetailProps> = ({ book }) => {
       </Link>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center lg:sticky lg:top-24">
           {book.images && book.images.length > 0 && (
-            <Carousel className="w-full max-w-md">
+            <Carousel className="w-full">
               <CarouselContent>
                 {book.images.map((image, index) => (
                   <CarouselItem key={index}>
-                    <div className="aspect-[3/4] overflow-hidden rounded-lg bg-muted flex items-center justify-center">
+                    <div className="w-full h-[70vh] rounded-lg bg-muted flex items-center justify-center">
                       <img
                         src={`/artworks/${image}`}
                         alt={`${book.title} - Image ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full max-h-[70vh] object-contain"
                         onLoad={() => setImageLoaded(true)}
                       />
                     </div>
